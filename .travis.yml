@@ -1,0 +1,23 @@
+language: php
+
+sudo: false
+
+php:
+  - '7.0'
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e "CREATE DATABASE IF NOT EXISTS dbname"
+  - mkdir -m 777 temp
+  - cp tests/Config/config.local.example.neon tests/Config/config.local.neon
+
+install:
+  - composer install --prefer-source
+
+script:
+  - vendor/bin/tester tests
+
+notifications:
+  email: false

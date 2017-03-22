@@ -7,7 +7,7 @@ extensions:
 
 doctrine:
     user: root
-    password: pass
-    dbname: database
+    password:
+    dbname: dbname
     metadata:
         RadekHubner\DoctrineExtensions: %appDir%/../src
