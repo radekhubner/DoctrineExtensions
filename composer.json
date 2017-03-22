@@ -1,6 +1,6 @@
 {
     "name": "radekhubner/doctrine-extensions",
-    "description": "Implementation of DoctrineExtensions to Nette.",
+    "description": "Implementation of DoctrineExtensions into Nette Framework.",
     "license": "MIT",
     "authors": [
         {
