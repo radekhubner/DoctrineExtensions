@@ -19,5 +19,15 @@
         "nette/tester": "^1.7",
         "nette/reflection": "^2.4",
         "tracy/tracy": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "RadekHubner\\DoctrineExtensions\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RadekHubner\\DoctrineExtensions\\Tests\\": "tests"
+        }
     }
 }
