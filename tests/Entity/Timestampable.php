@@ -6,6 +6,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 use Kdyby\Doctrine\Entities\Attributes\Identifier;
 use Nette\SmartObject;
+use RadekHubner\DoctrineExtensions\Traits\CreatedAtEntity;
+use RadekHubner\DoctrineExtensions\Traits\UpdatedAtEntity;
 
 /**
  * @ORM\Entity
@@ -16,7 +18,8 @@ class Timestampable
 
     use SmartObject;
     use Identifier;
-    use TimestampableEntity;
+    use CreatedAtEntity;
+    use UpdatedAtEntity;
 
     /**
      * @ORM\Column(type="integer")
